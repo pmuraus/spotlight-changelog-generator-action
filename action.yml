@@ -4,7 +4,7 @@ inputs:
   jiraBaseUrl:  # id of input
     description: 'Jira base url'
     required: true
-  
+
 runs:
   using: 'node16'
   main: 'index.js'

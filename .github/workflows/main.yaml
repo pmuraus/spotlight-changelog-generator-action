@@ -11,6 +11,9 @@ jobs:
       uses: actions/checkout@v2
     - name: Generate
       uses: pmuraus/spotlight-changelog-generator-action@main
+      with:
+        jiraBaseUrl: https://impactwrap.atlassian.net/
+        
     - name: Upload
       uses: pmuraus/spotlight-upload-action@main
       with:

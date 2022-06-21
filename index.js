@@ -3,7 +3,7 @@ const github = require("@actions/github")
 const ticketWithBracketsRegex = /(\[[a-zA-Z][a-zA-Z0-9_]+-[1-9][0-9]*\])/g
 const fs = require("fs")
 
-const jiraBaseUrl = "https://impactwrap.atlassian.net/"
+const jiraBaseUrl = core.getInput("jiraBaseUrl")
 
 const generateChangelog = (commits) => {
     const fixes = []
@@ -47,4 +47,4 @@ function extractList(list, title, prependLine) {
     return `${prependLine ? "\n" : ""}${title}\n\n${content}`
 }
 
-generateChangelog(require("./testCommits.json"))
+generateChangelog(gitlab.context.commits)
