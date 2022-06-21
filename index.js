@@ -47,4 +47,4 @@ function extractList(list, title, prependLine) {
     return `${prependLine ? "\n" : ""}${title}\n\n${content}`
 }
 
-generateChangelog(github.context.commits)
+generateChangelog(github.context.payload.commits)
