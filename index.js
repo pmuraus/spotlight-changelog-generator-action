@@ -4,6 +4,9 @@ const ticketWithBracketsRegex = /(\[[a-zA-Z][a-zA-Z0-9_]+-[1-9][0-9]*\])/g
 const fs = require("fs")
 
 const jiraBaseUrl = core.getInput("jiraBaseUrl")
+if (jiraBaseUrl.slice(-1) !== '/') {
+    jiraBaseUrl += "/"
+}
 
 const generateChangelog = (commits) => {
     const fixes = []
