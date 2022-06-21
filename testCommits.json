@@ -1,0 +1,328 @@
+[
+    {
+        "author": {
+            "email": "zan.bezjak@inova.si",
+            "name": "zanb"
+        },
+        "committer": {
+            "email": "zan.bezjak@inova.si",
+            "name": "zanb"
+        },
+        "distinct": false,
+        "id": "a6fd798e627e199263572fdf732c54244031e6df",
+        "message": "[IW-1229] fix: use correct icon for push notification",
+        "timestamp": "2022-05-27T09:57:51+02:00",
+        "tree_id": "a93ff371800740ce95beddbdad88883ae1586640",
+        "url": "https://github.com/inovait/impactwrap-android/commit/a6fd798e627e199263572fdf732c54244031e6df"
+    },
+    {
+        "author": {
+            "email": "zan.bezjak@inova.si",
+            "name": "zanb"
+        },
+        "committer": {
+            "email": "zan.bezjak@inova.si",
+            "name": "zanb"
+        },
+        "distinct": false,
+        "id": "bb6d8e57c00ba52f3334432b3a64a0bf34dcaca2",
+        "message": "[IW-1230] fix: allow user to expand push notification and see full text",
+        "timestamp": "2022-05-27T10:07:50+02:00",
+        "tree_id": "c5ea4933ef6324f8b757cf7b79f294353aa735d5",
+        "url": "https://github.com/inovait/impactwrap-android/commit/bb6d8e57c00ba52f3334432b3a64a0bf34dcaca2"
+    },
+    {
+        "author": {
+            "email": "zan.bezjak@inova.si",
+            "name": "Žan Bezjak"
+        },
+        "committer": {
+            "email": "zan.bezjak@inova.si",
+            "name": "Žan Bezjak"
+        },
+        "distinct": false,
+        "id": "f68e6943867a8118ddcbf4e37cfa7bd235cc7819",
+        "message": "Merge branch IW-1216-feat-statistics_endpoint into develop\n\n[IW-1216] feat: statistics endpoint\n\nSee merge request impact-wrap/impactwrap-android!755",
+        "timestamp": "2022-05-30T08:43:12Z",
+        "tree_id": "0fdbc3fb75f6500d0f856d0691dded69710d86e4",
+        "url": "https://github.com/inovait/impactwrap-android/commit/f68e6943867a8118ddcbf4e37cfa7bd235cc7819"
+    },
+    {
+        "author": {
+            "email": "zan.bezjak@inova.si",
+            "name": "Žan Bezjak"
+        },
+        "committer": {
+            "email": "zan.bezjak@inova.si",
+            "name": "Žan Bezjak"
+        },
+        "distinct": false,
+        "id": "519d6c07930582c5d65302fd2c63bf768f26c3fb",
+        "message": "Merge branch fix-push_notification into develop\n\n[IW-1229] fix: use correct icon for push notification - Žan Bezjak\n\nSee merge request impact-wrap/impactwrap-android!757",
+        "timestamp": "2022-06-06T12:12:38Z",
+        "tree_id": "6a10f9cffb6e61fb3d06db94e10cb997b149721f",
+        "url": "https://github.com/inovait/impactwrap-android/commit/519d6c07930582c5d65302fd2c63bf768f26c3fb"
+    },
+    {
+        "author": {
+            "email": "zan.bezjak@inova.si",
+            "name": "zanb"
+        },
+        "committer": {
+            "email": "zan.bezjak@inova.si",
+            "name": "zanb"
+        },
+        "distinct": false,
+        "id": "19f5c241a11b84fd454cd141daf2b2651c8cb182",
+        "message": "[IW-1393] fix: show continue button instead of log in on login first step",
+        "timestamp": "2022-06-08T09:09:18+02:00",
+        "tree_id": "3655a04f53ea0156ca9d25b8ccffbeb44e07f512",
+        "url": "https://github.com/inovait/impactwrap-android/commit/19f5c241a11b84fd454cd141daf2b2651c8cb182"
+    },
+    {
+        "author": {
+            "email": "zan.bezjak@inova.si",
+            "name": "zanb"
+        },
+        "committer": {
+            "email": "zan.bezjak@inova.si",
+            "name": "zanb"
+        },
+        "distinct": false,
+        "id": "159b895028ebc57db239f70c6437599fd01ea709",
+        "message": "[IW-1410] fix: sensor disconnect while on countdown workout screen",
+        "timestamp": "2022-06-08T13:17:39+02:00",
+        "tree_id": "a87afccc0ea76bd7a514493d30caf2e9d42a423a",
+        "url": "https://github.com/inovait/impactwrap-android/commit/159b895028ebc57db239f70c6437599fd01ea709"
+    },
+    {
+        "author": {
+            "email": "zan.bezjak@inova.si",
+            "name": "Žan Bezjak"
+        },
+        "committer": {
+            "email": "zan.bezjak@inova.si",
+            "name": "Žan Bezjak"
+        },
+        "distinct": false,
+        "id": "b97c26703b53988ed5e70eb97cc7a8bce89e3241",
+        "message": "Merge branch IW-1393-fix-continue_log_in_first_step into develop\n\n[IW-1393] fix: show continue button instead of log in on login first step - Žan Bezjak\n\nSee merge request impact-wrap/impactwrap-android!758",
+        "timestamp": "2022-06-08T11:24:49Z",
+        "tree_id": "a87afccc0ea76bd7a514493d30caf2e9d42a423a",
+        "url": "https://github.com/inovait/impactwrap-android/commit/b97c26703b53988ed5e70eb97cc7a8bce89e3241"
+    },
+    {
+        "author": {
+            "email": "zan.bezjak@inova.si",
+            "name": "zanb"
+        },
+        "committer": {
+            "email": "zan.bezjak@inova.si",
+            "name": "zanb"
+        },
+        "distinct": false,
+        "id": "0a15f36c8c5d2443472f0c358a572526bc40ae40",
+        "message": "[IW-1443] fix: missing inline error view on history list",
+        "timestamp": "2022-06-09T15:47:10+02:00",
+        "tree_id": "9f88e763b2b65a1fd353509f69a296971fbb42e4",
+        "url": "https://github.com/inovait/impactwrap-android/commit/0a15f36c8c5d2443472f0c358a572526bc40ae40"
+    },
+    {
+        "author": {
+            "email": "zan.bezjak@inova.si",
+            "name": "Žan Bezjak"
+        },
+        "committer": {
+            "email": "zan.bezjak@inova.si",
+            "name": "Žan Bezjak"
+        },
+        "distinct": false,
+        "id": "60ef52e7f5e89d1a27766890043626ee14c67640",
+        "message": "Merge branch IW-1443-fix-inline_error_history into develop\n\n[IW-1443] fix: missing inline error view on history list - Žan Bezjak\n\nSee merge request impact-wrap/impactwrap-android!760",
+        "timestamp": "2022-06-10T06:48:04Z",
+        "tree_id": "9f88e763b2b65a1fd353509f69a296971fbb42e4",
+        "url": "https://github.com/inovait/impactwrap-android/commit/60ef52e7f5e89d1a27766890043626ee14c67640"
+    },
+    {
+        "author": {
+            "email": "zan.bezjak@inova.si",
+            "name": "zanb"
+        },
+        "committer": {
+            "email": "zan.bezjak@inova.si",
+            "name": "zanb"
+        },
+        "distinct": false,
+        "id": "8b326590ed49f4749f7d2f413c87ecbb59ed4a7f",
+        "message": "[IW-1207] fix: format duration as hour:min:seconds",
+        "timestamp": "2022-06-10T10:08:27+02:00",
+        "tree_id": "723f87f0ca104d119f0fdbea14d9a216b7d671e6",
+        "url": "https://github.com/inovait/impactwrap-android/commit/8b326590ed49f4749f7d2f413c87ecbb59ed4a7f"
+    },
+    {
+        "author": {
+            "email": "zan.bezjak@inova.si",
+            "name": "zanb"
+        },
+        "committer": {
+            "email": "zan.bezjak@inova.si",
+            "name": "zanb"
+        },
+        "distinct": false,
+        "id": "4dbfacd193dd986b018853b117c7a14e6ee5ef54",
+        "message": "[IW-1295] fix: format duration as hour:min:seconds",
+        "timestamp": "2022-06-10T10:08:35+02:00",
+        "tree_id": "fd7aad163e0909dd686e026becc85b94a93cada4",
+        "url": "https://github.com/inovait/impactwrap-android/commit/4dbfacd193dd986b018853b117c7a14e6ee5ef54"
+    },
+    {
+        "author": {
+            "email": "zan.bezjak@inova.si",
+            "name": "zanb"
+        },
+        "committer": {
+            "email": "zan.bezjak@inova.si",
+            "name": "zanb"
+        },
+        "distinct": false,
+        "id": "ade42aa52c48ef2aaf9cc40963df66a33cd66c64",
+        "message": "[IW-1455] fix: chart data dividing with 0",
+        "timestamp": "2022-06-13T11:02:55+02:00",
+        "tree_id": "e5b03115f669de008b719e118a5bfa185d1d44af",
+        "url": "https://github.com/inovait/impactwrap-android/commit/ade42aa52c48ef2aaf9cc40963df66a33cd66c64"
+    },
+    {
+        "author": {
+            "email": "zan.bezjak@inova.si",
+            "name": "Žan Bezjak"
+        },
+        "committer": {
+            "email": "zan.bezjak@inova.si",
+            "name": "Žan Bezjak"
+        },
+        "distinct": false,
+        "id": "7620c5d0dd24b5a38938b770c9f470f929422063",
+        "message": "Merge branch IW-1455-fix-chart_generating_Data into develop\n\n[IW-1455] fix: chart data dividing with 0 - Žan Bezjak\n\nSee merge request impact-wrap/impactwrap-android!765",
+        "timestamp": "2022-06-13T09:09:54Z",
+        "tree_id": "e5b03115f669de008b719e118a5bfa185d1d44af",
+        "url": "https://github.com/inovait/impactwrap-android/commit/7620c5d0dd24b5a38938b770c9f470f929422063"
+    },
+    {
+        "author": {
+            "email": "zan.bezjak@inova.si",
+            "name": "Žan Bezjak"
+        },
+        "committer": {
+            "email": "zan.bezjak@inova.si",
+            "name": "Žan Bezjak"
+        },
+        "distinct": false,
+        "id": "58b5c2a9ea9e1d6e3e9f8cd5f7a9b233516b47ec",
+        "message": "Merge branch IW-1207-fix-format_seconds_as_hour_min_sec into develop\n\n[IW-1295] [IW-1207] fix: format duration as hour:min:seconds - Žan Bezjak\n\nSee merge request impact-wrap/impactwrap-android!762",
+        "timestamp": "2022-06-14T07:02:37Z",
+        "tree_id": "88bdb239c12c5f5eb4ac6b36c7d4ad7ba23a7be3",
+        "url": "https://github.com/inovait/impactwrap-android/commit/58b5c2a9ea9e1d6e3e9f8cd5f7a9b233516b47ec"
+    },
+    {
+        "author": {
+            "email": "zan.bezjak@inova.si",
+            "name": "zanb"
+        },
+        "committer": {
+            "email": "zan.bezjak@inova.si",
+            "name": "zanb"
+        },
+        "distinct": false,
+        "id": "56068423a08e5cf703354ace4cf97bd506e15bc5",
+        "message": "fix: format time with hours for workout summary",
+        "timestamp": "2022-06-14T11:49:19+02:00",
+        "tree_id": "294af641dfda151fb69b5ac3e4a4ea310a30376a",
+        "url": "https://github.com/inovait/impactwrap-android/commit/56068423a08e5cf703354ace4cf97bd506e15bc5"
+    },
+    {
+        "author": {
+            "email": "zan.bezjak@inova.si",
+            "name": "zanb"
+        },
+        "committer": {
+            "email": "zan.bezjak@inova.si",
+            "name": "zanb"
+        },
+        "distinct": false,
+        "id": "4bc00926d7ee2a463c4d5ee052774be42957a0df",
+        "message": "[IW-1207] fix: format time with hours for workout breakdown",
+        "timestamp": "2022-06-14T11:53:42+02:00",
+        "tree_id": "0d4263dde09ad735a44bfe859c4f2e9cd6151694",
+        "url": "https://github.com/inovait/impactwrap-android/commit/4bc00926d7ee2a463c4d5ee052774be42957a0df"
+    },
+    {
+        "author": {
+            "email": "zan.bezjak@inova.si",
+            "name": "zanb"
+        },
+        "committer": {
+            "email": "zan.bezjak@inova.si",
+            "name": "zanb"
+        },
+        "distinct": false,
+        "id": "1aadb42b9347f23e9b31526ed98ef675909c9b9b",
+        "message": "Merge remote-tracking branch origin/develop into develop",
+        "timestamp": "2022-06-14T11:54:15+02:00",
+        "tree_id": "0d4263dde09ad735a44bfe859c4f2e9cd6151694",
+        "url": "https://github.com/inovait/impactwrap-android/commit/1aadb42b9347f23e9b31526ed98ef675909c9b9b"
+    },
+    {
+        "author": {
+            "email": "peter.muraus@inova.si",
+            "name": "Peter Muraus",
+            "username": "pmuraus"
+        },
+        "committer": {
+            "email": "peter.muraus@inova.si",
+            "name": "Peter Muraus",
+            "username": "pmuraus"
+        },
+        "distinct": false,
+        "id": "85654570c934300546f27d5dada0cbd33bbfcf70",
+        "message": "Action test",
+        "timestamp": "2022-06-21T09:46:58+02:00",
+        "tree_id": "94777fe64abe8fa743c107b3bafa6a3ea00ada42",
+        "url": "https://github.com/inovait/impactwrap-android/commit/85654570c934300546f27d5dada0cbd33bbfcf70"
+    },
+    {
+        "author": {
+            "email": "peter.muraus@inova.si",
+            "name": "Peter Muraus",
+            "username": "pmuraus"
+        },
+        "committer": {
+            "email": "peter.muraus@inova.si",
+            "name": "Peter Muraus",
+            "username": "pmuraus"
+        },
+        "distinct": false,
+        "id": "1923883d6d2ce472558ad6fe670640b851319636",
+        "message": "Action test",
+        "timestamp": "2022-06-21T09:48:36+02:00",
+        "tree_id": "2f47c220900c343efd70281d14d0d922569d371f",
+        "url": "https://github.com/inovait/impactwrap-android/commit/1923883d6d2ce472558ad6fe670640b851319636"
+    },
+    {
+        "author": {
+            "email": "peter.muraus@inova.si",
+            "name": "pmuraus",
+            "username": "pmuraus"
+        },
+        "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+        },
+        "distinct": true,
+        "id": "6d07cd3f82dd0e283cdfd42128cabfa3090b28ce",
+        "message": "Merge pull request #2 from inovait/develop\n\nDevelop",
+        "timestamp": "2022-06-21T09:48:56+02:00",
+        "tree_id": "2f47c220900c343efd70281d14d0d922569d371f",
+        "url": "https://github.com/inovait/impactwrap-android/commit/6d07cd3f82dd0e283cdfd42128cabfa3090b28ce"
+    }
+]
