@@ -1,0 +1,10 @@
+name: 'Jira ticket extractor'
+description: 'Extract jira ticket from any string'
+inputs:
+  jiraBaseUrl:  # id of input
+    description: 'Jira base url'
+    required: true
+  
+runs:
+  using: 'node16'
+  main: 'index.js'
