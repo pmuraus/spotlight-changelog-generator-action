@@ -42,7 +42,7 @@ function extractList(list, title, prependLine) {
     }
     let content = ""
     list.forEach(it => {
-        content += `${it}\n`
+        content += `* ${it}\n`
     })
     return `${prependLine ? "\n" : ""}${title}\n\n${content}`
 }
