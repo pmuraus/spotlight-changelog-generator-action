@@ -13,11 +13,12 @@ jobs:
       uses: pmuraus/spotlight-changelog-generator-action@main
       with:
         jiraBaseUrl: https://impactwrap.atlassian.net
+        targetFileName: ./someLog.md
 
     - name: Upload
       uses: pmuraus/spotlight-upload-action@main
       with:
         buildName: "Changelog build"
         buildVersion: "1.0"
-        files: "./Changelog.md"
+        files: "./someLog.md"
         apiKey: ${{secrets.SPOTLIGHT_KEY}}

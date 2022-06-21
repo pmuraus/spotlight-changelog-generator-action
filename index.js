@@ -35,8 +35,8 @@ const generateChangelog = (commits) => {
     let content = extractList(features, "### Features", false)
     content += extractList(fixes, "### Bug Fixes", content.length > 0)
     content += extractList(miscellaneous, "### Miscellaneous", content.length > 0)
-    
-    fs.writeFileSync("./Changelog.md", content)
+
+    fs.writeFileSync(core.getInput("targetFileName") ?? "./Changelog.md", content)
 }
 
 function extractList(list, title, prependLine) {

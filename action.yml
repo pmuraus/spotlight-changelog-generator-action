@@ -4,6 +4,9 @@ inputs:
   jiraBaseUrl:  # id of input
     description: 'Jira base url'
     required: true
+  targetFileName:  # id of input
+    description: 'Target file name (Changelog.md by default)'
+    required: false
 
 runs:
   using: 'node16'
