@@ -8,25 +8,30 @@ if (jiraBaseUrl.slice(-1) !== '/') {
     jiraBaseUrl += "/"
 }
 
+const isIterable = object =>
+    object != null && typeof object[Symbol.iterator] === 'function'
+
 const generateChangelog = (commits) => {
     const fixes = []
     const features = []
     const miscellaneous = []
-    for (commit of commits) {
-        let message = commit.message
-        let ticketMatches = message.match(ticketWithBracketsRegex)
-        if (ticketMatches) {
-            for (match of ticketMatches) {
-                message = message.replace(match, `${match}(${jiraBaseUrl}browse/${match.replace("[", "").replace("]", "")})`)
+    if (isIterable(commits)) {
+        for (commit of commits) {
+            let message = commit.message
+            let ticketMatches = message.match(ticketWithBracketsRegex)
+            if (ticketMatches) {
+                for (match of ticketMatches) {
+                    message = message.replace(match, `${match}(${jiraBaseUrl}browse/${match.replace("[", "").replace("]", "")})`)
+                }
             }
-        }
-        if (message.indexOf("Merge ") != 0) {
-            if (message.toLowerCase().includes("fix:")) {
-                fixes.push(message)
-            } else if (message.toLowerCase().includes("feat:")) {
-                features.push(message)
-            } else {
-                miscellaneous.push(message)
+            if (message.indexOf("Merge ") != 0) {
+                if (message.toLowerCase().includes("fix:")) {
+                    fixes.push(message)
+                } else if (message.toLowerCase().includes("feat:")) {
+                    features.push(message)
+                } else {
+                    miscellaneous.push(message)
+                }
             }
         }
     }
