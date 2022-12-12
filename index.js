@@ -32,13 +32,13 @@ const generateChangelog = (commits) => {
       if (message.indexOf("Merge ") != 0) {
         if (message.toLowerCase().includes("fix:")) {
           if (message.toLowerCase().indexOf("fix") === 0) {
-            fixes.push(message.substring(4, message.length - 1))
+            fixes.push(message.substring(4, message.length))
           } else {
             fixes.push(message)
           }
         } else if (message.toLowerCase().includes("feat:")) {
           if (message.toLowerCase().indexOf("feat") === 0) {
-            fixes.push(message.substring(5, message.length - 1))
+            fixes.push(message.substring(5, message.length))
           } else {
             fixes.push(message)
           }
