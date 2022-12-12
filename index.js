@@ -80,5 +80,4 @@ async function run(after, before) {
   generateChangelog(commits)
 }
 
-run("c0169e6a35836976587bfa775c44f6b94650a0ad", "1cbe54cd9ba78feea3951467928638923c67d2bb")
-// run(github.context.payload.after, github.context.payload.before)
+run(github.context.payload.after, github.context.payload.before)
