@@ -2,6 +2,7 @@ const core = require("@actions/core")
 const github = require("@actions/github")
 const ticketWithBracketsRegex = /(\[[a-zA-Z][a-zA-Z0-9_]+-[1-9][0-9]*\])/g
 const fs = require("fs")
+const {extractCommits} = require("./main")
 
 let jiraBaseUrl = core.getInput("jiraBaseUrl")
 if (jiraBaseUrl.slice(-1) !== '/') {
@@ -59,4 +60,10 @@ function extractList(list, title, prependLine) {
     return `${prependLine ? "\n" : ""}${title}\n\n${content}`
 }
 
-generateChangelog(github.context.payload.commits)
+async function run(after, before) {
+  let commits = await extractCommits(after, before)
+  generateChangelog(commits)
+}
+
+run("d9931333153e5d6ec58b5aec73e68fdf027a10de", "1cbe54cd9ba78feea3951467928638923c67d2bb")
+// run(github.context.payload.after, github.context.payload.before)
