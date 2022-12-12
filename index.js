@@ -6,59 +6,61 @@ const {extractCommits} = require("./main")
 
 let jiraBaseUrl = core.getInput("jiraBaseUrl")
 if (jiraBaseUrl.slice(-1) !== '/') {
-    jiraBaseUrl += "/"
+  jiraBaseUrl += "/"
 }
 
 const isIterable = object =>
-    object != null && typeof object[Symbol.iterator] === 'function'
+  object != null && typeof object[Symbol.iterator] === 'function'
 
 const generateChangelog = (commits) => {
-    const fixes = []
-    const features = []
-    const miscellaneous = []
-    if (isIterable(commits)) {
-        for (commit of commits) {
-            let message = commit.message
-            let ticketMatches = message.match(ticketWithBracketsRegex)
-            if (ticketMatches) {
-                for (match of ticketMatches) {
-                    message = message.replace(match, `${match}(${jiraBaseUrl}browse/${match.replace("[", "").replace("]", "")})`)
-                }
-            }
-            if (message.indexOf("Merge ") != 0) {
-                if (message.toLowerCase().includes("fix:")) {
-                    fixes.push(message)
-                } else if (message.toLowerCase().includes("feat:")) {
-                    features.push(message)
-                } else {
-                    miscellaneous.push(message)
-                }
-            }
+  const fixes = []
+  const features = []
+  const miscellaneous = []
+  if (isIterable(commits)) {
+    for (commit of commits) {
+      let message = commit.message
+      let ticketMatches = message.match(ticketWithBracketsRegex)
+      if (ticketMatches) {
+        for (match of ticketMatches) {
+          message = message.replace(match, `${match}(${jiraBaseUrl}browse/${match.replace("[", "").replace("]", "")})`)
         }
+      }
+      if (message.indexOf("Merge ") != 0) {
+        if (message.toLowerCase().includes("fix:")) {
+          fixes.push(message)
+        } else if (message.toLowerCase().includes("feat:")) {
+          features.push(message)
+        } else {
+          miscellaneous.push(message)
+        }
+      }
     }
+  }
 
 
-    let content = extractList(features, "### Features", false)
-    content += extractList(fixes, "### Bug Fixes", content.length > 0)
-    content += extractList(miscellaneous, "### Miscellaneous", content.length > 0)
+  let content = extractList(features, "### Features", false)
+  content += extractList(fixes, "### Bug Fixes", content.length > 0)
+  content += extractList(miscellaneous, "### Miscellaneous", content.length > 0)
 
-    let targetFileName = core.getInput("targetFileName")
-    if (targetFileName == null || targetFileName === "") {
-        targetFileName = "./Changelog.md"
-    }
-    console.log(content)
-    fs.writeFileSync(targetFileName, content)
+  let targetFileName = core.getInput("targetFileName")
+  if (targetFileName == null || targetFileName === "") {
+    targetFileName = "./Changelog.md"
+  }
+  console.log(content)
+  fs.writeFileSync(targetFileName, content)
 }
 
 function extractList(list, title, prependLine) {
-    if (list.length == 0) {
-        return ""
+  if (list.length == 0) {
+    return ""
+  }
+  let content = ""
+  list.forEach(it => {
+    if (content.indexOf(it) === -1) {
+      content += `* ${it}\n`
     }
-    let content = ""
-    list.forEach(it => {
-        content += `* ${it}\n`
-    })
-    return `${prependLine ? "\n" : ""}${title}\n\n${content}`
+  })
+  return `${prependLine ? "\n" : ""}${title}\n\n${content}`
 }
 
 async function run(after, before) {
