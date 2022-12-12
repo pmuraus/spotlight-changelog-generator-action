@@ -46,6 +46,7 @@ const generateChangelog = (commits) => {
     if (targetFileName == null || targetFileName === "") {
         targetFileName = "./Changelog.md"
     }
+    console.log(content)
     fs.writeFileSync(targetFileName, content)
 }
 
