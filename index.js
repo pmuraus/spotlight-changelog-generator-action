@@ -16,6 +16,7 @@ const generateChangelog = (commits) => {
   const fixes = []
   const features = []
   const miscellaneous = []
+  let onlyJiraCommits = core.getInput("includeOnlyCommitTitle")
   if (isIterable(commits)) {
     for (commit of commits) {
       let message = commit.message
@@ -24,6 +25,8 @@ const generateChangelog = (commits) => {
         for (match of ticketMatches) {
           message = message.replace(match, `${match}(${jiraBaseUrl}browse/${match.replace("[", "").replace("]", "")})`)
         }
+      } else if (onlyJiraCommits) {
+        continue
       }
       if (message.indexOf("Merge ") != 0) {
         if (message.toLowerCase().includes("fix:")) {

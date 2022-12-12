@@ -7,7 +7,9 @@ inputs:
   targetFileName:  # id of input
     description: 'Target file name (Changelog.md by default)'
     required: false
-
+  includeOnlyCommitTitle: # show only major commits including a jira ticket
+    description: 'Show only commit messages from messages containing tickets mentions'
+    required: false
 runs:
   using: 'node16'
   main: 'index.js'
