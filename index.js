@@ -17,6 +17,7 @@ const generateChangelog = (commits) => {
   const features = []
   const miscellaneous = []
   let onlyJiraCommits = core.getInput("includeOnlyCommitTitle")
+  console.log(onlyJiraCommits)
   if (isIterable(commits)) {
     for (commit of commits) {
       let message = commit.message
@@ -30,9 +31,17 @@ const generateChangelog = (commits) => {
       }
       if (message.indexOf("Merge ") != 0) {
         if (message.toLowerCase().includes("fix:")) {
-          fixes.push(message.substring(4, message.length - 1))
+          if (message.toLowerCase().indexOf("fix") === 0) {
+            fixes.push(message.substring(4, message.length - 1))
+          } else {
+            fixes.push(message)
+          }
         } else if (message.toLowerCase().includes("feat:")) {
-          features.push(message.substring(5, message.length - 1))
+          if (message.toLowerCase().indexOf("feat") === 0) {
+            fixes.push(message.substring(5, message.length - 1))
+          } else {
+            fixes.push(message)
+          }
         } else {
           miscellaneous.push(message)
         }
