@@ -30,9 +30,9 @@ const generateChangelog = (commits) => {
       }
       if (message.indexOf("Merge ") != 0) {
         if (message.toLowerCase().includes("fix:")) {
-          fixes.push(message)
+          fixes.push(message.substring(4, message.length - 1))
         } else if (message.toLowerCase().includes("feat:")) {
-          features.push(message)
+          features.push(message.substring(5, message.length - 1))
         } else {
           miscellaneous.push(message)
         }
