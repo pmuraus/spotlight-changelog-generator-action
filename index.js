@@ -38,9 +38,9 @@ const generateChangelog = (commits) => {
           }
         } else if (message.toLowerCase().includes("feat:")) {
           if (message.toLowerCase().indexOf("feat") === 0) {
-            fixes.push(message.substring(5, message.length))
+            features.push(message.substring(5, message.length))
           } else {
-            fixes.push(message)
+            features.push(message)
           }
         } else {
           miscellaneous.push(message)
