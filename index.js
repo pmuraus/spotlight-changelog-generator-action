@@ -22,6 +22,7 @@ const generateChangelog = (commits) => {
     for (commit of commits) {
       let message = commit.message
       let ticketMatches = message.match(ticketWithBracketsRegex)
+      console.log(message)
       if (ticketMatches) {
         for (match of ticketMatches) {
           message = message.replace(match, `${match}(${jiraBaseUrl}browse/${match.replace("[", "").replace("]", "")})`)
