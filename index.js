@@ -80,5 +80,5 @@ async function run(after, before) {
   let commits = await extractCommits(after, before)
   generateChangelog(commits)
 }
-
+console.log(github.context.payload)
 run(github.context.payload.after, github.context.payload.before)
